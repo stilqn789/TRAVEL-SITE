@@ -1,0 +1,288 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:#5CB5B0;
+}
+
+a:hover{
+    color:rgb(41, 114, 110);
+}
+
+.clearfix{
+    display: block;
+    clear: both;
+}
+
+.main_header {
+    background:white;
+    box-shadow: 0 11px 20px rgb(102,191,191,0.5);
+    margin-bottom: 30px;
+}
+
+.site_container{
+    width: 67.71%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.main_logo{
+    display: inline-block;
+    width: 151px;
+    height: 89px;
+    background: url('images/logo.png');
+    margin-top: 5px;
+}
+
+.main_navigation{
+    float: right;
+    margin-top: 25px;
+    margin-right: -12px;
+}
+
+.main_navigation ul{
+display: inline-block;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.main_navigation ul li{
+    float: left;
+}
+
+.main_navigation ul:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.burger_menu{
+    display: none;
+    color: black;
+    font-size: 32px;
+    float: right;
+    padding: 20px;
+}
+
+.main_navigation ul li a{
+    display: block;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 12px;
+    margin-left: 23px;
+}
+
+.main_navigation a:hover{
+    font-weight: bold;
+    border-bottom: 3px solid #FACA68;
+}
+
+.main_navigation a.selected{
+    font-weight: bold;
+    border-bottom: 3px solid #FACA68;
+}
+
+aside.filters{
+    padding-top: 50px;
+    width: 23.84%;
+    float: left;
+}
+
+.searchbar-name, .price-range-text, .dates-of-the-trip-text{
+    color: rgba(33, 151, 145, 0.993);
+    font-size:20px;
+    margin-bottom: 10px;
+}
+.form-inline{
+    margin-bottom: 30px;
+}
+
+
+   
+
+
+
+
+
+.page_body{
+    width: 74.61%;
+    float: right;
+}
+
+.page_section h2{
+    font-size: 28px;
+}
+
+.page_section{
+    margin-bottom: 43px;
+}
+
+
+
+.colorful_buttons{
+    display: inline-block;
+    padding: 13px 33px 14px 32px;
+    background:#eee;
+    margin-right: 33px;
+    margin-bottom: 15px;
+    border-radius:25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #FFD074 0%, #FA68BE 100%);
+    transition: all .2s ease-out;
+}
+
+.colorful_buttons.green{
+    background: linear-gradient(90deg, #68FAF8 0%, #74FBB4 100%);
+}
+
+.colorful_buttons.gray{
+    background: linear-gradient(90deg, #F57E86 0%, #9ECEEF 100%);
+}
+
+.colorful_buttons:hover {
+    color: skyblue;
+    opacity: 0.7;
+}
+
+.colorful_buttons:active{
+    transform:translateY(3px)
+} 
+
+.deals_list{
+    justify-content: space-between;
+    display: flex;
+}
+
+.deal_list_item{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 32%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.deal_list_item .deal_pic{
+    display: block;
+    height: 170px;
+    background: #eee center;
+    background-size: cover;;
+    margin-bottom: 10px;
+}
+
+.deal_list_item .deal_title{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.deal_list_item p{
+    margin: 0;
+    color:  #808080;
+}
+
+.deal_list_item .deal_price{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.deal_list_item .deal_price .buy_button {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 9px 16px ;
+    font-size: 12px;
+    color: white;
+    background: #F7BF4D;
+    border-radius: 83px;
+}
+
+.deal_list_item .deal_price .buy_button:active{
+    transform: translateY(3px);
+}
+
+.deal_list_item .deal_price .buy_button:hover{
+    color: skyblue;
+    opacity: 0.7;
+}
+
+strong{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media only screen and (max-width:1200px) {
+    .site_container{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .site_container{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:760px){
+    .main_navigation ul li a{
+        font-size: 16px;
+    }
+    .deal_list_item{
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .deals_list{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width:700px){
+    .main_logo{
+        display: block;
+        margin: 5px auto 0;
+    }
+    .main_navigation{
+        float: none;
+        display: inline-block;
+        margin: 0;
+
+    }
+    .main_header{
+        text-align: center;
+    }
+
+    aside.filters{
+        display: none;
+    }
+    .page_body{
+        float: none;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width:560px){
+    .main_navigation{
+        display: none;
+    }
+    .burger_menu{
+        display: block;
+    }
+}
+
+

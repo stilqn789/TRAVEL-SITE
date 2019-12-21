@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Site</title>
+    <link rel="shortcut icon" type="image/png" href="images/icons8-traveler-48.png" >
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="site">
+        <header class="main_header">
+            <div class="site_container">
+                <a href="#" class="burger_menu"  onclick="toggle()" ><i class="fas fa-bars" ></i></a>
+                <a href="index.html" class="main_logo"></a>
+                <nav class="main_navigation" id="burger">
+                    <ul>
+                        <li><a href="#" class="selected"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="#">TraveGuide</a></li>
+                        <li><a href="#">Favorites</a></li>
+                        <li><a href="#">Profiles</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </div>
+        </header>
+        <main>
+            <div class="site_container">
+                <aside class="filters">
+                    <div class="searchbar-name">Destinations</div>
+                    <form class="form-inline">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+                          aria-label="Search">
+                      </form>
+                      <div>
+                      
+                            <label for="amount" class="price-range-text">Price range</label>
+                            
+                            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                          
+                           
+                          <div id="slider-range" style="margin-bottom: 30px;"></div>
+                        </div>
+                        <div>
+                            <div class="dates-of-the-trip-text">Dates of the trip:</div>
+                                <label for="from" style="color:rgba(33, 151, 145, 0.993);">From</label>
+                                <input type="text" id="from" name="from" style="width: 70px;">
+                                <label for="to" style="color: rgba(33, 151, 145, 0.993);">to</label>
+                                <input type="text" id="to" name="to" style="width: 70px;">
+                        </div>
+                </aside>
+                <div class="page_body">
+                    <section class="page_section">
+                        <h2>Most popular destinations this summer</h2>
+                        <div class="section_container">
+                            <a href="#" class="colorful_buttons">London,Great Britain</a>
+                            <a href="#" class="colorful_buttons green">Dubai, UAE</a>
+                            <a href="#" class="colorful_buttons gray">Plovdiv, Bulgaria</a>
+                        </div>
+                    </section>
+                    <section class="page_section">
+                        <h2>Recommended deals</h2>
+                        <div class="section_container">
+                            <div class="deals_list">
+                                <article class="deal_list_item">
+                                    <a href="#" class="deal_pic" style="  background-image: url('images/pexels-photo-3021382.jpeg');;"></a>
+                                    <a href="#" class="deal_title">Rome, Italy</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione a amet consequatur ab. </p>
+                                    <div class="deal_price">
+                                        <strong>$ 250<sup>56</sup></strong>
+                                       <a href="#" class="buy_button">Buy now</a>
+                                    </div>
+                                </article>
+                                <article class="deal_list_item">
+                                    <a href="#" class="deal_pic" style=" background-image: url('images/pexels-photo-1388030.jpeg')"></a>
+                                    <a href="#" class="deal_title">Barcelona,Spain</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione a amet consequatur ab. </p>
+                                    <div class="deal_price">
+                                        <strong>$ 310<sup>66</sup></strong>
+                                        <a href="#" class="buy_button">Buy now</a>
+                                </article>
+                                <article class="deal_list_item">
+                                    <a href="#" class="deal_pic" style=" background-image: url('images/photo-1545251142-f32339076e6d.jpg')"></a>
+                                    <a href="#" class="deal_title">Hawaii</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione a amet consequatur ab. </p>
+                                    <div class="deal_price">
+                                        <strong>$ 211<sup>69</sup></strong>
+                                        <a href="#" class="buy_button">Buy now</a>
+                                </article>
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <section class="page_section">
+                        <h2>All summer deals</h2>
+                        <div class="section_container">
+                            <div class="deals_list">
+                                <article class="deal_list_item">
+                                    <a href="#" class="deal_pic" style="  background-image: url('images/photo-1539980307411-6820f89db71b.jpg');;"></a>
+                                    <a href="#" class="deal_title">Silhouette</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione a amet consequatur ab.  </p>
+                                    <div class="deal_price">
+                                        <strong>$ 950<sup>65</sup></strong>
+                                        <a href="#" class="buy_button">Buy now</a>
+                                    </div>
+                                </article>
+                                <article class="deal_list_item">
+                                    <a href="#" class="deal_pic" style=" background-image: url('images/pexels-photo-1388030.jpeg')"></a>
+                                    <a href="#" class="deal_title">Barcelona,Spain</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione a amet consequatur ab. </p>
+                                    <div class="deal_price">
+                                        <strong>$ 310<sup>66</sup></strong>
+                                        <a href="#" class="buy_button">Buy now</a>
+                                </article>
+                                <article class="deal_list_item">
+                                    <a href="#" class="deal_pic" style=" background-image: url('images/photo-1545251142-f32339076e6d.jpg')"></a>
+                                    <a href="#" class="deal_title">Hawaii</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione a amet consequatur ab. </p>
+                                    <div class="deal_price">
+                                        <strong>$ 211<sup>69</sup></strong>
+                                        <a href="#" class="buy_button">Buy now</a>
+                                </article>
+                                
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
